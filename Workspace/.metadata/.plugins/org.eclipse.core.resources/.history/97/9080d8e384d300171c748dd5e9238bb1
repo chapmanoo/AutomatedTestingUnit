@@ -1,0 +1,26 @@
+package OwenC.AutomatedTestingWeek;
+
+import org.junit.*;
+import org.openqa.selenium.*;
+import org.openqa.selenium.chrome.*;
+
+public class webDriver {
+	
+	private String url = "http://www.google.com";
+	private WebDriver webDriver;
+
+	@Before
+	public void setUp() {
+		webDriver = new ChromeDriver();
+	}
+	
+	@After
+	public void tearDown() {
+		webDriver.quit();
+	}
+	
+	@Test
+	public void testA() {
+		
+	}
+}
