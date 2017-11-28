@@ -569,3 +569,321 @@
 2017-11-27 16:36:26,225 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Admin\Documents\OwenC\GitTestingFolder\Workspace\AutomatedTestingWeek\src\main\resources
 2017-11-27 16:36:26,230 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2017-11-27 16:36:26,235 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Admin\Documents\OwenC\GitTestingFolder\Workspace\AutomatedTestingWeek\src\test\resources
+2017-11-28 08:48:11,567 [Worker-3] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2017-11-28 08:49:59,872 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-11-28 08:49:59,873 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Admin\Documents\OwenC\GitTestingFolder\Workspace\AutomatedTestingWeek\src\main\resources
+2017-11-28 08:49:59,874 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-11-28 08:49:59,874 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Admin\Documents\OwenC\GitTestingFolder\Workspace\AutomatedTestingWeek\src\test\resources
+2017-11-28 09:40:25,541 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-11-28 09:40:25,541 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Admin\Documents\OwenC\GitTestingFolder\Workspace\AutomatedTestingWeek\src\main\resources
+2017-11-28 09:40:25,542 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-11-28 09:40:25,542 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Admin\Documents\OwenC\GitTestingFolder\Workspace\AutomatedTestingWeek\src\test\resources
+2017-11-28 09:50:50,610 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-11-28 09:50:50,611 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Admin\Documents\OwenC\GitTestingFolder\Workspace\AutomatedTestingWeek\src\main\resources
+2017-11-28 09:50:50,612 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-11-28 09:50:50,612 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Admin\Documents\OwenC\GitTestingFolder\Workspace\AutomatedTestingWeek\src\test\resources
+2017-11-28 09:51:37,962 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-11-28 09:51:37,962 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Admin\Documents\OwenC\GitTestingFolder\Workspace\AutomatedTestingWeek\src\main\resources
+2017-11-28 09:51:37,964 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-11-28 09:51:37,970 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Admin\Documents\OwenC\GitTestingFolder\Workspace\AutomatedTestingWeek\src\test\resources
+2017-11-28 09:52:06,031 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-11-28 09:52:06,032 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Admin\Documents\OwenC\GitTestingFolder\Workspace\AutomatedTestingWeek\src\main\resources
+2017-11-28 09:52:06,033 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-11-28 09:52:06,037 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Admin\Documents\OwenC\GitTestingFolder\Workspace\AutomatedTestingWeek\src\test\resources
+2017-11-28 09:53:11,350 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-11-28 09:53:11,357 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Admin\Documents\OwenC\GitTestingFolder\Workspace\AutomatedTestingWeek\src\main\resources
+2017-11-28 09:53:11,364 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-11-28 09:53:11,368 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Admin\Documents\OwenC\GitTestingFolder\Workspace\AutomatedTestingWeek\src\test\resources
+2017-11-28 09:53:31,471 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-11-28 09:53:31,471 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Admin\Documents\OwenC\GitTestingFolder\Workspace\AutomatedTestingWeek\src\main\resources
+2017-11-28 09:53:31,473 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-11-28 09:53:31,495 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Admin\Documents\OwenC\GitTestingFolder\Workspace\AutomatedTestingWeek\src\test\resources
+2017-11-28 09:54:53,220 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-11-28 09:54:53,225 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Admin\Documents\OwenC\GitTestingFolder\Workspace\AutomatedTestingWeek\src\main\resources
+2017-11-28 09:54:53,230 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-11-28 09:54:53,234 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Admin\Documents\OwenC\GitTestingFolder\Workspace\AutomatedTestingWeek\src\test\resources
+2017-11-28 10:04:11,328 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-11-28 10:04:11,329 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Admin\Documents\OwenC\GitTestingFolder\Workspace\AutomatedTestingWeek\src\main\resources
+2017-11-28 10:04:11,330 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-11-28 10:04:11,337 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Admin\Documents\OwenC\GitTestingFolder\Workspace\AutomatedTestingWeek\src\test\resources
+2017-11-28 10:10:02,938 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-11-28 10:10:02,943 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Admin\Documents\OwenC\GitTestingFolder\Workspace\AutomatedTestingWeek\src\main\resources
+2017-11-28 10:10:02,948 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-11-28 10:10:02,953 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Admin\Documents\OwenC\GitTestingFolder\Workspace\AutomatedTestingWeek\src\test\resources
+2017-11-28 10:12:17,694 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-11-28 10:12:17,694 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Admin\Documents\OwenC\GitTestingFolder\Workspace\AutomatedTestingWeek\src\main\resources
+2017-11-28 10:12:17,695 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-11-28 10:12:17,699 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Admin\Documents\OwenC\GitTestingFolder\Workspace\AutomatedTestingWeek\src\test\resources
+2017-11-28 10:12:51,012 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-11-28 10:12:51,016 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Admin\Documents\OwenC\GitTestingFolder\Workspace\AutomatedTestingWeek\src\main\resources
+2017-11-28 10:12:51,021 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-11-28 10:12:51,026 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Admin\Documents\OwenC\GitTestingFolder\Workspace\AutomatedTestingWeek\src\test\resources
+2017-11-28 10:13:01,969 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-11-28 10:13:01,970 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Admin\Documents\OwenC\GitTestingFolder\Workspace\AutomatedTestingWeek\src\main\resources
+2017-11-28 10:13:01,971 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-11-28 10:13:01,977 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Admin\Documents\OwenC\GitTestingFolder\Workspace\AutomatedTestingWeek\src\test\resources
+2017-11-28 10:13:43,635 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-11-28 10:13:43,639 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Admin\Documents\OwenC\GitTestingFolder\Workspace\AutomatedTestingWeek\src\main\resources
+2017-11-28 10:13:43,644 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-11-28 10:13:43,649 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Admin\Documents\OwenC\GitTestingFolder\Workspace\AutomatedTestingWeek\src\test\resources
+2017-11-28 10:14:41,237 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-11-28 10:14:41,238 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Admin\Documents\OwenC\GitTestingFolder\Workspace\AutomatedTestingWeek\src\main\resources
+2017-11-28 10:14:41,239 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-11-28 10:14:41,249 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Admin\Documents\OwenC\GitTestingFolder\Workspace\AutomatedTestingWeek\src\test\resources
+2017-11-28 10:14:58,331 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-11-28 10:14:58,335 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Admin\Documents\OwenC\GitTestingFolder\Workspace\AutomatedTestingWeek\src\main\resources
+2017-11-28 10:14:58,342 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-11-28 10:14:58,346 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Admin\Documents\OwenC\GitTestingFolder\Workspace\AutomatedTestingWeek\src\test\resources
+2017-11-28 10:15:45,455 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-11-28 10:15:45,455 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Admin\Documents\OwenC\GitTestingFolder\Workspace\AutomatedTestingWeek\src\main\resources
+2017-11-28 10:15:45,456 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-11-28 10:15:45,460 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Admin\Documents\OwenC\GitTestingFolder\Workspace\AutomatedTestingWeek\src\test\resources
+2017-11-28 10:16:43,264 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-11-28 10:16:43,270 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Admin\Documents\OwenC\GitTestingFolder\Workspace\AutomatedTestingWeek\src\main\resources
+2017-11-28 10:16:43,276 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-11-28 10:16:43,280 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Admin\Documents\OwenC\GitTestingFolder\Workspace\AutomatedTestingWeek\src\test\resources
+2017-11-28 10:31:10,137 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-11-28 10:31:10,156 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Admin\Documents\OwenC\GitTestingFolder\Workspace\AutomatedTestingWeek\src\main\resources
+2017-11-28 10:31:10,157 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-11-28 10:31:10,161 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Admin\Documents\OwenC\GitTestingFolder\Workspace\AutomatedTestingWeek\src\test\resources
+2017-11-28 10:33:41,567 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-11-28 10:33:41,572 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Admin\Documents\OwenC\GitTestingFolder\Workspace\AutomatedTestingWeek\src\main\resources
+2017-11-28 10:33:41,577 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-11-28 10:33:41,581 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Admin\Documents\OwenC\GitTestingFolder\Workspace\AutomatedTestingWeek\src\test\resources
+2017-11-28 10:58:06,441 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-11-28 10:58:06,441 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Admin\Documents\OwenC\GitTestingFolder\Workspace\AutomatedTestingWeek\src\main\resources
+2017-11-28 10:58:06,441 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-11-28 10:58:06,446 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Admin\Documents\OwenC\GitTestingFolder\Workspace\AutomatedTestingWeek\src\test\resources
+2017-11-28 11:31:45,611 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-11-28 11:31:45,611 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Admin\Documents\OwenC\GitTestingFolder\Workspace\AutomatedTestingWeek\src\main\resources
+2017-11-28 11:31:45,626 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-11-28 11:31:45,635 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Admin\Documents\OwenC\GitTestingFolder\Workspace\AutomatedTestingWeek\src\test\resources
+2017-11-28 11:41:23,478 [Worker-37] INFO  o.e.m.i.launch.MavenLaunchDelegate - C:\Users\Admin\Documents\OwenC\GitTestingFolder\Workspace\AutomatedTestingWeek
+2017-11-28 11:41:23,479 [Worker-37] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B clean
+2017-11-28 11:41:25,025 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-11-28 11:41:25,037 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Admin\Documents\OwenC\GitTestingFolder\Workspace\AutomatedTestingWeek\src\main\resources
+2017-11-28 11:41:25,050 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-11-28 11:41:25,059 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Admin\Documents\OwenC\GitTestingFolder\Workspace\AutomatedTestingWeek\src\test\resources
+2017-11-28 11:41:34,811 [Worker-36] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: OwenC:AutomatedTestingWeek:0.0.1-SNAPSHOT @ C:\Users\Admin\Documents\OwenC\GitTestingFolder\Workspace\AutomatedTestingWeek\pom.xml.
+2017-11-28 11:41:35,267 [Worker-36] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/poi/poi-ooxml/3.17/poi-ooxml-3.17.pom
+2017-11-28 11:41:35,328 [Worker-36] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/poi/poi-ooxml/3.17/poi-ooxml-3.17.pom
+2017-11-28 11:41:35,370 [Worker-36] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/poi/poi-ooxml-schemas/3.17/poi-ooxml-schemas-3.17.pom
+2017-11-28 11:41:35,402 [Worker-36] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/poi/poi-ooxml-schemas/3.17/poi-ooxml-schemas-3.17.pom
+2017-11-28 11:41:35,440 [Worker-36] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/xmlbeans/xmlbeans/2.6.0/xmlbeans-2.6.0.pom
+2017-11-28 11:41:35,469 [Worker-36] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/xmlbeans/xmlbeans/2.6.0/xmlbeans-2.6.0.pom
+2017-11-28 11:41:35,500 [Worker-36] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/stax/stax-api/1.0.1/stax-api-1.0.1.pom
+2017-11-28 11:41:35,539 [Worker-36] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/stax/stax-api/1.0.1/stax-api-1.0.1.pom
+2017-11-28 11:41:35,573 [Worker-36] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/github/virtuald/curvesapi/1.04/curvesapi-1.04.pom
+2017-11-28 11:41:35,601 [Worker-36] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/github/virtuald/curvesapi/1.04/curvesapi-1.04.pom
+2017-11-28 11:41:35,658 [Worker-36] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/poi/poi-ooxml/3.17/poi-ooxml-3.17.jar
+2017-11-28 11:41:35,967 [Worker-36] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/poi/poi-ooxml/3.17/poi-ooxml-3.17.jar
+2017-11-28 11:41:35,991 [Worker-36] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/poi/poi-ooxml-schemas/3.17/poi-ooxml-schemas-3.17.jar
+2017-11-28 11:41:36,573 [Worker-36] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/poi/poi-ooxml-schemas/3.17/poi-ooxml-schemas-3.17.jar
+2017-11-28 11:41:36,590 [Worker-36] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/xmlbeans/xmlbeans/2.6.0/xmlbeans-2.6.0.jar
+2017-11-28 11:41:36,855 [Worker-36] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/xmlbeans/xmlbeans/2.6.0/xmlbeans-2.6.0.jar
+2017-11-28 11:41:36,879 [Worker-36] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/stax/stax-api/1.0.1/stax-api-1.0.1.jar
+2017-11-28 11:41:37,105 [Worker-36] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/stax/stax-api/1.0.1/stax-api-1.0.1.jar
+2017-11-28 11:41:37,128 [Worker-36] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/github/virtuald/curvesapi/1.04/curvesapi-1.04.jar
+2017-11-28 11:41:37,162 [Worker-36] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/github/virtuald/curvesapi/1.04/curvesapi-1.04.jar
+2017-11-28 11:41:38,655 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-11-28 11:41:38,656 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Admin\Documents\OwenC\GitTestingFolder\Workspace\AutomatedTestingWeek\src\main\resources
+2017-11-28 11:41:38,657 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-11-28 11:41:38,657 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Admin\Documents\OwenC\GitTestingFolder\Workspace\AutomatedTestingWeek\src\test\resources
+2017-11-28 11:41:39,244 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-11-28 11:41:39,290 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Admin\Documents\OwenC\GitTestingFolder\Workspace\AutomatedTestingWeek\src\main\resources
+2017-11-28 11:41:39,298 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-11-28 11:41:39,298 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Admin\Documents\OwenC\GitTestingFolder\Workspace\AutomatedTestingWeek\src\test\resources
+2017-11-28 11:49:28,110 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-11-28 11:49:28,110 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Admin\Documents\OwenC\GitTestingFolder\Workspace\AutomatedTestingWeek\src\main\resources
+2017-11-28 11:49:28,111 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-11-28 11:49:28,111 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Admin\Documents\OwenC\GitTestingFolder\Workspace\AutomatedTestingWeek\src\test\resources
+2017-11-28 11:56:31,548 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-11-28 11:56:31,553 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Admin\Documents\OwenC\GitTestingFolder\Workspace\AutomatedTestingWeek\src\main\resources
+2017-11-28 11:56:31,558 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-11-28 11:56:31,558 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Admin\Documents\OwenC\GitTestingFolder\Workspace\AutomatedTestingWeek\src\test\resources
+2017-11-28 11:57:49,828 [Worker-38] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/seleniumhq/selenium/selenium-support/3.7.1/selenium-support-3.7.1-sources.jar
+2017-11-28 11:57:49,920 [Worker-38] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/seleniumhq/selenium/selenium-support/3.7.1/selenium-support-3.7.1-sources.jar
+2017-11-28 11:57:50,068 [Worker-38] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.seleniumhq.selenium:selenium-support:3.7.1
+2017-11-28 11:57:50,273 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-11-28 11:57:50,277 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Admin\Documents\OwenC\GitTestingFolder\Workspace\AutomatedTestingWeek\src\main\resources
+2017-11-28 11:57:50,281 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-11-28 11:57:50,287 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Admin\Documents\OwenC\GitTestingFolder\Workspace\AutomatedTestingWeek\src\test\resources
+2017-11-28 12:00:53,777 [Worker-49] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-11-28 12:00:53,784 [Worker-49] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Admin\Documents\OwenC\GitTestingFolder\Workspace\AutomatedTestingWeek\src\main\resources
+2017-11-28 12:00:53,789 [Worker-49] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-11-28 12:00:53,794 [Worker-49] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Admin\Documents\OwenC\GitTestingFolder\Workspace\AutomatedTestingWeek\src\test\resources
+2017-11-28 12:02:03,215 [Worker-46] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/poi/poi-ooxml/3.17/poi-ooxml-3.17-sources.jar
+2017-11-28 12:02:04,114 [Worker-46] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/poi/poi-ooxml/3.17/poi-ooxml-3.17-sources.jar
+2017-11-28 12:02:04,235 [Worker-46] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.apache.poi:poi-ooxml:3.17
+2017-11-28 12:02:04,467 [Worker-50] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-11-28 12:02:04,471 [Worker-50] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Admin\Documents\OwenC\GitTestingFolder\Workspace\AutomatedTestingWeek\src\main\resources
+2017-11-28 12:02:04,476 [Worker-50] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-11-28 12:02:04,476 [Worker-50] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Admin\Documents\OwenC\GitTestingFolder\Workspace\AutomatedTestingWeek\src\test\resources
+2017-11-28 12:05:19,853 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-11-28 12:05:19,853 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Admin\Documents\OwenC\GitTestingFolder\Workspace\AutomatedTestingWeek\src\main\resources
+2017-11-28 12:05:19,860 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-11-28 12:05:19,864 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Admin\Documents\OwenC\GitTestingFolder\Workspace\AutomatedTestingWeek\src\test\resources
+2017-11-28 12:06:40,543 [Worker-38] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-11-28 12:06:40,543 [Worker-38] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Admin\Documents\OwenC\GitTestingFolder\Workspace\AutomatedTestingWeek\src\main\resources
+2017-11-28 12:06:40,551 [Worker-38] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-11-28 12:06:40,555 [Worker-38] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Admin\Documents\OwenC\GitTestingFolder\Workspace\AutomatedTestingWeek\src\test\resources
+2017-11-28 13:08:52,584 [Worker-50] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-11-28 13:08:52,584 [Worker-50] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Admin\Documents\OwenC\GitTestingFolder\Workspace\AutomatedTestingWeek\src\main\resources
+2017-11-28 13:08:52,589 [Worker-50] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-11-28 13:08:52,595 [Worker-50] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Admin\Documents\OwenC\GitTestingFolder\Workspace\AutomatedTestingWeek\src\test\resources
+2017-11-28 13:13:46,942 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-11-28 13:13:46,942 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Admin\Documents\OwenC\GitTestingFolder\Workspace\AutomatedTestingWeek\src\main\resources
+2017-11-28 13:13:46,947 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-11-28 13:13:46,952 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Admin\Documents\OwenC\GitTestingFolder\Workspace\AutomatedTestingWeek\src\test\resources
+2017-11-28 13:19:36,244 [Worker-58] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-11-28 13:19:36,244 [Worker-58] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Admin\Documents\OwenC\GitTestingFolder\Workspace\AutomatedTestingWeek\src\main\resources
+2017-11-28 13:19:36,252 [Worker-58] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-11-28 13:19:36,256 [Worker-58] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Admin\Documents\OwenC\GitTestingFolder\Workspace\AutomatedTestingWeek\src\test\resources
+2017-11-28 13:22:28,245 [Worker-56] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: OwenC:AutomatedTestingWeek:0.0.1-SNAPSHOT @ C:\Users\Admin\Documents\OwenC\GitTestingFolder\Workspace\AutomatedTestingWeek\pom.xml.
+2017-11-28 13:22:28,494 [Worker-56] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/aventstack/extentreports/3.1.1/extentreports-3.1.1.pom
+2017-11-28 13:22:28,542 [Worker-56] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/aventstack/extentreports/3.1.1/extentreports-3.1.1.pom
+2017-11-28 13:22:28,580 [Worker-56] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/freemarker/freemarker/2.3.23/freemarker-2.3.23.pom
+2017-11-28 13:22:28,618 [Worker-56] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/freemarker/freemarker/2.3.23/freemarker-2.3.23.pom
+2017-11-28 13:22:28,649 [Worker-56] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/sonatype/oss/oss-parent/9/oss-parent-9.pom
+2017-11-28 13:22:28,687 [Worker-56] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/sonatype/oss/oss-parent/9/oss-parent-9.pom
+2017-11-28 13:22:28,718 [Worker-56] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/mongodb/mongodb-driver/3.3.0/mongodb-driver-3.3.0.pom
+2017-11-28 13:22:28,787 [Worker-56] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/mongodb/mongodb-driver/3.3.0/mongodb-driver-3.3.0.pom
+2017-11-28 13:22:28,819 [Worker-56] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/mongodb/bson/3.3.0/bson-3.3.0.pom
+2017-11-28 13:22:28,847 [Worker-56] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/mongodb/bson/3.3.0/bson-3.3.0.pom
+2017-11-28 13:22:28,880 [Worker-56] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/mongodb/mongodb-driver-core/3.3.0/mongodb-driver-core-3.3.0.pom
+2017-11-28 13:22:28,911 [Worker-56] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/mongodb/mongodb-driver-core/3.3.0/mongodb-driver-core-3.3.0.pom
+2017-11-28 13:22:28,940 [Worker-56] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpclient/4.5.2/httpclient-4.5.2.pom
+2017-11-28 13:22:28,973 [Worker-56] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpclient/4.5.2/httpclient-4.5.2.pom
+2017-11-28 13:22:29,018 [Worker-56] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpcomponents-client/4.5.2/httpcomponents-client-4.5.2.pom
+2017-11-28 13:22:29,054 [Worker-56] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpcomponents-client/4.5.2/httpcomponents-client-4.5.2.pom
+2017-11-28 13:22:29,084 [Worker-56] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpcore/4.4.4/httpcore-4.4.4.pom
+2017-11-28 13:22:29,116 [Worker-56] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpcore/4.4.4/httpcore-4.4.4.pom
+2017-11-28 13:22:29,145 [Worker-56] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpcomponents-core/4.4.4/httpcomponents-core-4.4.4.pom
+2017-11-28 13:22:29,179 [Worker-56] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpcomponents-core/4.4.4/httpcomponents-core-4.4.4.pom
+2017-11-28 13:22:29,209 [Worker-56] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpmime/4.5.2/httpmime-4.5.2.pom
+2017-11-28 13:22:29,243 [Worker-56] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpmime/4.5.2/httpmime-4.5.2.pom
+2017-11-28 13:22:29,274 [Worker-56] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/jsoup/jsoup/1.9.2/jsoup-1.9.2.pom
+2017-11-28 13:22:29,341 [Worker-56] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/jsoup/jsoup/1.9.2/jsoup-1.9.2.pom
+2017-11-28 13:22:29,373 [Worker-56] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/google/code/gson/gson/2.8.0/gson-2.8.0.pom
+2017-11-28 13:22:29,403 [Worker-56] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/google/code/gson/gson/2.8.0/gson-2.8.0.pom
+2017-11-28 13:22:29,433 [Worker-56] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/google/code/gson/gson-parent/2.8.0/gson-parent-2.8.0.pom
+2017-11-28 13:22:29,462 [Worker-56] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/google/code/gson/gson-parent/2.8.0/gson-parent-2.8.0.pom
+2017-11-28 13:22:29,513 [Worker-56] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/aventstack/extentreports/3.1.1/extentreports-3.1.1.jar
+2017-11-28 13:22:29,643 [Worker-56] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/aventstack/extentreports/3.1.1/extentreports-3.1.1.jar
+2017-11-28 13:22:29,673 [Worker-56] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/freemarker/freemarker/2.3.23/freemarker-2.3.23.jar
+2017-11-28 13:22:30,024 [Worker-56] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/freemarker/freemarker/2.3.23/freemarker-2.3.23.jar
+2017-11-28 13:22:30,046 [Worker-56] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/mongodb/mongodb-driver/3.3.0/mongodb-driver-3.3.0.jar
+2017-11-28 13:22:30,141 [Worker-56] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/mongodb/mongodb-driver/3.3.0/mongodb-driver-3.3.0.jar
+2017-11-28 13:22:30,160 [Worker-56] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/mongodb/bson/3.3.0/bson-3.3.0.jar
+2017-11-28 13:22:30,249 [Worker-56] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/mongodb/bson/3.3.0/bson-3.3.0.jar
+2017-11-28 13:22:30,273 [Worker-56] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/mongodb/mongodb-driver-core/3.3.0/mongodb-driver-core-3.3.0.jar
+2017-11-28 13:22:30,489 [Worker-56] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/mongodb/mongodb-driver-core/3.3.0/mongodb-driver-core-3.3.0.jar
+2017-11-28 13:22:30,510 [Worker-56] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpmime/4.5.2/httpmime-4.5.2.jar
+2017-11-28 13:22:30,692 [Worker-56] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpmime/4.5.2/httpmime-4.5.2.jar
+2017-11-28 13:22:30,714 [Worker-56] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/jsoup/jsoup/1.9.2/jsoup-1.9.2.jar
+2017-11-28 13:22:30,815 [Worker-56] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/jsoup/jsoup/1.9.2/jsoup-1.9.2.jar
+2017-11-28 13:22:32,291 [Worker-56] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-11-28 13:22:32,292 [Worker-56] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Admin\Documents\OwenC\GitTestingFolder\Workspace\AutomatedTestingWeek\src\main\resources
+2017-11-28 13:22:32,293 [Worker-56] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-11-28 13:22:32,297 [Worker-56] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Admin\Documents\OwenC\GitTestingFolder\Workspace\AutomatedTestingWeek\src\test\resources
+2017-11-28 13:22:32,348 [Worker-54] INFO  o.e.m.i.launch.MavenLaunchDelegate - C:\Users\Admin\Documents\OwenC\GitTestingFolder\Workspace\AutomatedTestingWeek
+2017-11-28 13:22:32,353 [Worker-54] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B clean
+2017-11-28 13:22:33,597 [Worker-54] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-11-28 13:22:33,602 [Worker-54] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Admin\Documents\OwenC\GitTestingFolder\Workspace\AutomatedTestingWeek\src\main\resources
+2017-11-28 13:22:33,607 [Worker-54] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-11-28 13:22:33,612 [Worker-54] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Admin\Documents\OwenC\GitTestingFolder\Workspace\AutomatedTestingWeek\src\test\resources
+2017-11-28 13:22:34,689 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-11-28 13:22:34,693 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Admin\Documents\OwenC\GitTestingFolder\Workspace\AutomatedTestingWeek\src\main\resources
+2017-11-28 13:22:34,699 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-11-28 13:22:34,704 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Admin\Documents\OwenC\GitTestingFolder\Workspace\AutomatedTestingWeek\src\test\resources
+2017-11-28 13:22:39,526 [main] INFO  o.e.m2e.actions.ExecutePomAction - Using existing launch configuration
+2017-11-28 13:22:41,312 [Worker-60] INFO  o.e.m.i.launch.MavenLaunchDelegate - C:\Users\Admin\Documents\OwenC\GitTestingFolder\Workspace\AutomatedTestingWeek
+2017-11-28 13:22:41,317 [Worker-60] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B 
+2017-11-28 13:22:46,655 [Worker-56] INFO  o.e.m.i.launch.MavenLaunchDelegate - C:\Users\Admin\Documents\OwenC\GitTestingFolder\Workspace\AutomatedTestingWeek
+2017-11-28 13:22:46,655 [Worker-56] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B install
+2017-11-28 13:22:48,645 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-11-28 13:22:48,656 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Admin\Documents\OwenC\GitTestingFolder\Workspace\AutomatedTestingWeek\src\main\resources
+2017-11-28 13:22:48,667 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-11-28 13:22:48,667 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Admin\Documents\OwenC\GitTestingFolder\Workspace\AutomatedTestingWeek\src\test\resources
+2017-11-28 13:22:57,757 [Worker-61] INFO  o.e.m.i.launch.MavenLaunchDelegate - C:\Users\Admin\Documents\OwenC\GitTestingFolder\Workspace\AutomatedTestingWeek
+2017-11-28 13:22:57,757 [Worker-61] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B clean
+2017-11-28 13:22:58,979 [Worker-54] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-11-28 13:22:58,980 [Worker-54] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Admin\Documents\OwenC\GitTestingFolder\Workspace\AutomatedTestingWeek\src\main\resources
+2017-11-28 13:22:58,996 [Worker-54] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-11-28 13:22:59,011 [Worker-54] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Admin\Documents\OwenC\GitTestingFolder\Workspace\AutomatedTestingWeek\src\test\resources
+2017-11-28 13:39:43,523 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-11-28 13:39:43,523 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Admin\Documents\OwenC\GitTestingFolder\Workspace\AutomatedTestingWeek\src\main\resources
+2017-11-28 13:39:43,529 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-11-28 13:39:43,535 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Admin\Documents\OwenC\GitTestingFolder\Workspace\AutomatedTestingWeek\src\test\resources
+2017-11-28 13:40:23,766 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-11-28 13:40:23,766 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Admin\Documents\OwenC\GitTestingFolder\Workspace\AutomatedTestingWeek\src\main\resources
+2017-11-28 13:40:23,771 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-11-28 13:40:23,776 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Admin\Documents\OwenC\GitTestingFolder\Workspace\AutomatedTestingWeek\src\test\resources
+2017-11-28 13:41:22,069 [Worker-60] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-11-28 13:41:22,069 [Worker-60] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Admin\Documents\OwenC\GitTestingFolder\Workspace\AutomatedTestingWeek\src\main\resources
+2017-11-28 13:41:22,075 [Worker-60] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-11-28 13:41:22,080 [Worker-60] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Admin\Documents\OwenC\GitTestingFolder\Workspace\AutomatedTestingWeek\src\test\resources
+2017-11-28 13:46:02,203 [Worker-54] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-11-28 13:46:02,204 [Worker-54] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Admin\Documents\OwenC\GitTestingFolder\Workspace\AutomatedTestingWeek\src\main\resources
+2017-11-28 13:46:02,210 [Worker-54] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-11-28 13:46:02,216 [Worker-54] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Admin\Documents\OwenC\GitTestingFolder\Workspace\AutomatedTestingWeek\src\test\resources
+2017-11-28 13:49:15,452 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-11-28 13:49:15,452 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Admin\Documents\OwenC\GitTestingFolder\Workspace\AutomatedTestingWeek\src\main\resources
+2017-11-28 13:49:15,459 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-11-28 13:49:15,464 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Admin\Documents\OwenC\GitTestingFolder\Workspace\AutomatedTestingWeek\src\test\resources
+2017-11-28 13:49:55,573 [Worker-60] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-11-28 13:49:55,573 [Worker-60] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Admin\Documents\OwenC\GitTestingFolder\Workspace\AutomatedTestingWeek\src\main\resources
+2017-11-28 13:49:55,577 [Worker-60] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-11-28 13:49:55,581 [Worker-60] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Admin\Documents\OwenC\GitTestingFolder\Workspace\AutomatedTestingWeek\src\test\resources
+2017-11-28 13:50:24,964 [Worker-4] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2017-11-28 13:50:48,755 [Worker-2] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2017-11-28 13:52:25,791 [Worker-3] INFO  o.e.m.i.launch.MavenLaunchDelegate - C:\Users\Admin\Documents\OwenC\GitTestingFolder\Workspace\AutomatedTestingWeek
+2017-11-28 13:52:25,793 [Worker-3] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B clean
+2017-11-28 13:52:27,550 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-11-28 13:52:27,551 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Admin\Documents\OwenC\GitTestingFolder\Workspace\AutomatedTestingWeek\src\main\resources
+2017-11-28 13:52:27,552 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-11-28 13:52:27,552 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Admin\Documents\OwenC\GitTestingFolder\Workspace\AutomatedTestingWeek\src\test\resources
+2017-11-28 13:52:35,797 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-11-28 13:52:35,797 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Admin\Documents\OwenC\GitTestingFolder\Workspace\AutomatedTestingWeek\src\main\resources
+2017-11-28 13:52:35,798 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-11-28 13:52:35,798 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Admin\Documents\OwenC\GitTestingFolder\Workspace\AutomatedTestingWeek\src\test\resources
+2017-11-28 13:57:16,727 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-11-28 13:57:16,727 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Admin\Documents\OwenC\GitTestingFolder\Workspace\AutomatedTestingWeek\src\main\resources
+2017-11-28 13:57:16,728 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-11-28 13:57:16,729 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Admin\Documents\OwenC\GitTestingFolder\Workspace\AutomatedTestingWeek\src\test\resources
+2017-11-28 13:57:30,963 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-11-28 13:57:30,967 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Admin\Documents\OwenC\GitTestingFolder\Workspace\AutomatedTestingWeek\src\main\resources
+2017-11-28 13:57:30,968 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-11-28 13:57:30,968 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Admin\Documents\OwenC\GitTestingFolder\Workspace\AutomatedTestingWeek\src\test\resources
+2017-11-28 13:58:12,633 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-11-28 13:58:12,637 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Admin\Documents\OwenC\GitTestingFolder\Workspace\AutomatedTestingWeek\src\main\resources
+2017-11-28 13:58:12,644 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-11-28 13:58:12,648 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Admin\Documents\OwenC\GitTestingFolder\Workspace\AutomatedTestingWeek\src\test\resources
+2017-11-28 14:01:22,358 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-11-28 14:01:22,364 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Admin\Documents\OwenC\GitTestingFolder\Workspace\AutomatedTestingWeek\src\main\resources
+2017-11-28 14:01:22,369 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-11-28 14:01:22,373 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Admin\Documents\OwenC\GitTestingFolder\Workspace\AutomatedTestingWeek\src\test\resources
+2017-11-28 14:02:06,975 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-11-28 14:02:06,981 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Admin\Documents\OwenC\GitTestingFolder\Workspace\AutomatedTestingWeek\src\main\resources
+2017-11-28 14:02:06,986 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-11-28 14:02:06,991 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Admin\Documents\OwenC\GitTestingFolder\Workspace\AutomatedTestingWeek\src\test\resources
+2017-11-28 14:06:53,727 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-11-28 14:06:53,731 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Admin\Documents\OwenC\GitTestingFolder\Workspace\AutomatedTestingWeek\src\main\resources
+2017-11-28 14:06:53,738 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-11-28 14:06:53,742 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Admin\Documents\OwenC\GitTestingFolder\Workspace\AutomatedTestingWeek\src\test\resources
+2017-11-28 14:07:53,235 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-11-28 14:07:53,239 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Admin\Documents\OwenC\GitTestingFolder\Workspace\AutomatedTestingWeek\src\main\resources
+2017-11-28 14:07:53,244 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-11-28 14:07:53,248 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Admin\Documents\OwenC\GitTestingFolder\Workspace\AutomatedTestingWeek\src\test\resources
+2017-11-28 14:09:04,934 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-11-28 14:09:04,938 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Admin\Documents\OwenC\GitTestingFolder\Workspace\AutomatedTestingWeek\src\main\resources
+2017-11-28 14:09:04,943 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-11-28 14:09:04,947 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Admin\Documents\OwenC\GitTestingFolder\Workspace\AutomatedTestingWeek\src\test\resources
+2017-11-28 14:09:57,652 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-11-28 14:09:57,658 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Admin\Documents\OwenC\GitTestingFolder\Workspace\AutomatedTestingWeek\src\main\resources
+2017-11-28 14:09:57,663 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-11-28 14:09:57,668 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Admin\Documents\OwenC\GitTestingFolder\Workspace\AutomatedTestingWeek\src\test\resources
+2017-11-28 14:33:59,417 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-11-28 14:33:59,418 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Admin\Documents\OwenC\GitTestingFolder\Workspace\AutomatedTestingWeek\src\main\resources
+2017-11-28 14:33:59,423 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-11-28 14:33:59,427 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Admin\Documents\OwenC\GitTestingFolder\Workspace\AutomatedTestingWeek\src\test\resources

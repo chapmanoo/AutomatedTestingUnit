@@ -2,95 +2,119 @@ package OwenC.AutomatedTestingWeek;
 
 import static org.junit.Assert.*;
 
+import java.io.File;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+
 import org.junit.*;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.*;
+import org.openqa.selenium.support.PageFactory;
+
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.Status;
+import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 
 public class webDriver {
 
-	private String url = "http://www.google.com";
 	private WebDriver webDriver;
+	private SpreadSheetReader spreadSheetReader;
+	private static ExtentReports report;
+	private ScreenShot screenShot;
+
+	@BeforeClass
+	public static void init() {
+		report = new ExtentReports();
+		String fileName = "MyReport" + ".html";
+		String filePath = System.getProperty("user.dir") + File.separatorChar + fileName;
+		report.attachReporter(new ExtentHtmlReporter(filePath));
+	}
 
 	@Before
 	public void setUp() {
 		webDriver = new ChromeDriver();
+		screenShot = new ScreenShot();
+		spreadSheetReader = new SpreadSheetReader("properties.xlsx");
+
 	}
 
 	@After
 	public void tearDown() {
 		webDriver.quit();
 	}
-
-	/*@Test
-	public void gitHubLoginTest() {
-		String username = "";
-		String password = "";
-		webDriver.navigate().to(url);
-		webDriver.manage().window().fullscreen();
-
-		WebElement searchBar = webDriver.findElement(By.cssSelector("#lst-ib"));
-		searchBar.sendKeys("github \n");
-		WebElement link = webDriver
-				.findElement(By.cssSelector("#rso > div:nth-child(1) > div > div > div > div > h3 > a"));
-		link.click();
-
-		WebElement signInButton = webDriver.findElement(By.cssSelector(
-				"body > div.position-relative.js-header-wrapper > header > div > div.HeaderMenu.HeaderMenu--bright.d-lg-flex.flex-justify-between.flex-auto > div > span > div > a:nth-child(1)"));
-		signInButton.click();
-
-		WebElement usernameBox = webDriver.findElement(By.cssSelector("#login_field"));
-		WebElement passwordBox = webDriver.findElement(By.cssSelector("#password"));
-
-		usernameBox.sendKeys(username);
-		passwordBox.sendKeys(password + "\n");
-
-		WebElement profile = webDriver.findElement(By.cssSelector("#user-links > li:nth-child(3) > details > summary"));
-		profile.click();
-		WebElement usernameLabel = webDriver.findElement(By.cssSelector(
-				"#user-links > li:nth-child(3) > details > ul > li.dropdown-header.header-nav-current-user.css-truncate > strong"));
-
-		String result = usernameLabel.getText().toString();
-
-		System.out.println('b' + 2);
-		assertEquals("Result wasn't expected", "EXPECTED", result);
-	}*/
 	
+	@AfterClass
+	public static void cleanUp() {
+		report.flush();
+	}
+
 	@Test
-	public void demositeLoginTest()
-	{
-		webDriver.navigate().to("http://thedemosite.co.uk");
-		String username = "1234";
-		String password = "1234";
+	public void demositeLoginTest() {
+		ExtentTest test = report.createTest("MyFirstTest");
+		test.log(Status.INFO, "Test started");
 		
-		WebElement action = webDriver.findElement(By.cssSelector("body > div > center > table > tbody > tr:nth-child(2) > td > div > center > table > tbody > tr > td:nth-child(2) > p > small > a:nth-child(6)"));
-		action.click();
+		HomePage homePage = PageFactory.initElements(webDriver, HomePage.class);
+		CreateAccountPage createAccountPage = PageFactory.initElements(webDriver, CreateAccountPage.class);
+		LoginPage loginPage = PageFactory.initElements(webDriver, LoginPage.class);
+
+		List<String> inputList = new ArrayList<String>();
+
+		inputList = spreadSheetReader.readRow(0, "inputs");
+		String username = inputList.get(1).substring(0, (inputList.get(1).length() - 2));
+
+		inputList = spreadSheetReader.readRow(1, "inputs");
+		String password = inputList.get(1).substring(0, (inputList.get(1).length() - 2));
+
+		test.log(Status.DEBUG, "Username found: " + username);
+		test.log(Status.DEBUG, "Password found: " + password);
 		
-		action = webDriver.findElement(By.cssSelector("body > table > tbody > tr > td.auto-style1 > form > div > center > table > tbody > tr > td:nth-child(1) > div > center > table > tbody > tr:nth-child(1) > td:nth-child(2) > p > input"));
-		action.sendKeys(username);
+		inputList = spreadSheetReader.readRow(2, "inputs");
+		webDriver.navigate().to(inputList.get(1));
+
+		homePage.clickCreateAccount();
 		
-		action = webDriver.findElement(By.cssSelector("body > table > tbody > tr > td.auto-style1 > form > div > center > table > tbody > tr > td:nth-child(1) > div > center > table > tbody > tr:nth-child(2) > td:nth-child(2) > p > input[type=\"password\"]"));
-		action.sendKeys(password);
+
+		createAccountPage.createAccount(username, password);
+		try {
+			String sShot1 = screenShot.take(webDriver, "Input username and password");
+			test.addScreenCaptureFromPath(sShot1);
+			test.log(Status.INFO, "Input Username and Password");
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		
-		action = webDriver.findElement(By.cssSelector("body > table > tbody > tr > td.auto-style1 > form > div > center > table > tbody > tr > td:nth-child(1) > div > center > table > tbody > tr:nth-child(3) > td:nth-child(2) > p > input[type=\"button\"]"));
-		action.click();
+				
+		createAccountPage.clickCreateAccount();
+		test.log(Status.INFO, "Account create button clicked");
 		
-		action = webDriver.findElement(By.cssSelector("body > table > tbody > tr > td.auto-style1 > form > div > center > table > tbody > tr > td:nth-child(2) > small > a"));
-		action.click();
+		createAccountPage.clickLogin();
+		test.log(Status.INFO, "Link to login clicked");
+
+		loginPage.attemptLogin(username, password);
+		try {
+			String sShot2 = screenShot.take(webDriver, "Input username and password");
+			test.addScreenCaptureFromPath(sShot2);
+			test.log(Status.INFO, "Input Username and Password");
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		
-		action = webDriver.findElement(By.cssSelector("body > table > tbody > tr > td.auto-style1 > form > div > center > table > tbody > tr > td:nth-child(1) > table > tbody > tr:nth-child(1) > td:nth-child(2) > p > input"));
-		action.sendKeys(username);
-		
-		action = webDriver.findElement(By.cssSelector("body > table > tbody > tr > td.auto-style1 > form > div > center > table > tbody > tr > td:nth-child(1) > table > tbody > tr:nth-child(2) > td:nth-child(2) > p > input[type=\"password\"]"));
-		action.sendKeys(password);
-		
-		action = webDriver.findElement(By.cssSelector("body > table > tbody > tr > td.auto-style1 > form > div > center > table > tbody > tr > td:nth-child(1) > table > tbody > tr:nth-child(3) > td:nth-child(2) > p > input[type=\"button\"]"));
-		action.click();
-		
-		action = webDriver.findElement(By.cssSelector("body > table > tbody > tr > td.auto-style1 > big > blockquote > blockquote > font > center > b"));
-		assertEquals("Result wasn't expected", "**Successful Login**", action.getText().toString());
-		
-		
-		
-		
+		loginPage.clickLoginButton();
+
+		inputList = spreadSheetReader.readRow(3, "inputs");
+
+		try {
+			String sShot3 = screenShot.take(webDriver, "login screenshot");
+			test.addScreenCaptureFromPath(sShot3);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		assertEquals("Result wasn't expected", inputList.get(1), loginPage.getLoginText());
+
 	}
 }

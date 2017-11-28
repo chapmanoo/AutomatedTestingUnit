@@ -1,0 +1,102 @@
+package OwenC.AutomatedTestingWeek;
+
+import static org.junit.Assert.*;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.junit.*;
+import org.openqa.selenium.*;
+import org.openqa.selenium.chrome.*;
+import org.openqa.selenium.support.PageFactory;
+
+public class webDriver {
+
+	private WebDriver webDriver;
+	private SpreadSheetReader spreadSheetReader;
+	private static ExtentReports report;
+	
+
+	@BeforeClass
+	public static void init() {
+		
+	}
+	
+	@Before
+	public void setUp() {
+		webDriver = new ChromeDriver();
+		spreadSheetReader = new SpreadSheetReader("properties.xlsx");
+		
+	}
+
+	@After
+	public void tearDown() {
+		webDriver.quit();
+	}
+
+	/*@Test
+	public void gitHubLoginTest() {
+		String username = "";
+		String password = "";
+		webDriver.navigate().to("http://www.google.com");
+		webDriver.manage().window().fullscreen();
+
+		WebElement searchBar = webDriver.findElement(By.cssSelector("#lst-ib"));
+		searchBar.sendKeys("github \n");
+		WebElement link = webDriver
+				.findElement(By.cssSelector("#rso > div:nth-child(1) > div > div > div > div > h3 > a"));
+		link.click();
+
+		WebElement signInButton = webDriver.findElement(By.cssSelector(
+				"body > div.position-relative.js-header-wrapper > header > div > div.HeaderMenu.HeaderMenu--bright.d-lg-flex.flex-justify-between.flex-auto > div > span > div > a:nth-child(1)"));
+		signInButton.click();
+
+		WebElement usernameBox = webDriver.findElement(By.cssSelector("#login_field"));
+		WebElement passwordBox = webDriver.findElement(By.cssSelector("#password"));
+
+		usernameBox.sendKeys(username);
+		passwordBox.sendKeys(password + "\n");
+
+		WebElement profile = webDriver.findElement(By.cssSelector("#user-links > li:nth-child(3) > details > summary"));
+		profile.click();
+		WebElement usernameLabel = webDriver.findElement(By.cssSelector(
+				"#user-links > li:nth-child(3) > details > ul > li.dropdown-header.header-nav-current-user.css-truncate > strong"));
+
+		String result = usernameLabel.getText().toString();
+
+		System.out.println('b' + 2);
+		assertEquals("Result wasn't expected", "EXPECTED", result);
+	}*/
+
+	@Test
+	public void demositeLoginTest() {
+		HomePage homePage = PageFactory.initElements(webDriver, HomePage.class);
+		CreateAccountPage createAccountPage = PageFactory.initElements(webDriver, CreateAccountPage.class);
+		LoginPage loginPage = PageFactory.initElements(webDriver, LoginPage.class);
+
+		List<String> inputList = new ArrayList<String>();
+		
+		inputList = spreadSheetReader.readRow(0, "inputs");
+		String username = inputList.get(1).substring(0, (inputList.get(1).length() - 2));
+		
+		inputList = spreadSheetReader.readRow(1, "inputs");
+		String password = inputList.get(1).substring(0, (inputList.get(1).length() - 2));
+
+		
+		inputList = spreadSheetReader.readRow(2, "inputs");
+		webDriver.navigate().to(inputList.get(1));
+
+		homePage.clickCreateAccount();
+
+		createAccountPage.createAccount(username, password);
+		createAccountPage.clickCreateAccount();
+		createAccountPage.clickLogin();
+
+		loginPage.attemptLogin(username, password);
+
+		inputList = spreadSheetReader.readRow(3, "inputs");
+		
+		assertEquals("Result wasn't expected", inputList.get(1), loginPage.getLoginText());
+
+	}
+}
