@@ -1,0 +1,55 @@
+package OwenC.AutomatedTestingWeek;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+
+public class DemoQAHomePage {
+
+	@FindBy(linkText = "Draggable")
+	private WebElement draggableLink;
+
+	@FindBy(linkText = "http://demoqa.com/selectable/")
+	private WebElement selectableLink;
+
+	@FindBy(linkText = "http://demoqa.com/sortable/")
+	private WebElement sortableLink;
+
+	@FindBy(linkText = "http://demoqa.com/tooltip/")
+	private WebElement tooltipLink;
+
+	@FindBy(linkText = "http://demoqa.com/slider/")
+	private WebElement sliderLink;
+
+	@FindBy(linkText = "http://demoqa.com/datepicker/")
+	private WebElement datepickerLink;
+
+	public void clickDraggableLink() {
+		draggableLink.click();
+		
+	}
+
+	public void clickSortableLink() {
+		sortableLink.click();
+
+	}
+
+	public void clickSelectableLink() {
+		selectableLink.click();
+
+	}
+
+	public void clickTooltipLink() {
+		tooltipLink.click();
+
+	}
+
+	public void clickDatepickerLink() {
+		datepickerLink.click();
+
+	}
+
+	public void clickSliderLink() {
+		sliderLink.click();
+
+	}
+}

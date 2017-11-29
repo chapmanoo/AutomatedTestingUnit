@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="DraggableTest" project="AutomatedTestingWeek" tests="5" started="5" failures="0" errors="0" ignored="0">
+  <testsuite name="OwenC.AutomatedTestingWeek.DraggableTest" time="19.574">
+    <testcase name="cursorStyle" classname="OwenC.AutomatedTestingWeek.DraggableTest" time="3.344"/>
+    <testcase name="events" classname="OwenC.AutomatedTestingWeek.DraggableTest" time="2.505"/>
+    <testcase name="constrainMovement" classname="OwenC.AutomatedTestingWeek.DraggableTest" time="2.505"/>
+    <testcase name="draggableAndSortable" classname="OwenC.AutomatedTestingWeek.DraggableTest" time="2.514"/>
+    <testcase name="defaultFunctionalityTest" classname="OwenC.AutomatedTestingWeek.DraggableTest" time="8.706"/>
+  </testsuite>
+</testrun>

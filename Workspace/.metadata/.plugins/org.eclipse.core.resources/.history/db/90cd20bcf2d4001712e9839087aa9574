@@ -1,0 +1,99 @@
+package OwenC.AutomatedTestingWeek;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+
+public class DemoQADraggable {
+
+	@FindBy(css = "#ui-id-1")
+	WebElement defaultFunctionalityButton;
+
+	@FindBy(css = "#ui-id-2")
+	WebElement constrainMovementButton;
+
+	@FindBy(css = "#ui-id-3")
+	WebElement cursorStyleButton;
+
+	@FindBy(css = "#ui-id-4")
+	WebElement eventsButton;
+
+	@FindBy(css = "#ui-id-5")
+	WebElement draggableSortableButton;
+
+	@FindBy(css = "#draggable")
+	WebElement draggable;
+
+	@FindBy(css = "#draggabl > p")
+	WebElement onlyVerticalDrag;
+
+	@FindBy(css = "#draggabl2 > p")
+	WebElement onlyHorizontalDrag;
+
+	@FindBy(css = "#drag > p")
+	WebElement dragWillStayCentre;
+
+	public int getDraggableX() {
+		return draggable.getLocation().x;
+	}
+
+	public int getDraggableY() {
+		return draggable.getLocation().y;
+	}
+
+	public WebElement getDraggable() {
+		return draggable;
+	}
+
+	public int getVertDraggableX() {
+		return onlyVerticalDrag.getLocation().x;
+	}
+
+	public WebElement getVertDraggable() {
+		return onlyVerticalDrag;
+	}
+
+	public int getHorizontalDraggableY() {
+		return onlyHorizontalDrag.getLocation().y;
+	}
+
+	public WebElement getHorizontalDraggable() {
+		return onlyHorizontalDrag;
+	}
+
+	public int getDragStayCentreX() {
+		return dragWillStayCentre.getLocation().x;
+	}
+
+	public int getDragStayCentreY() {
+		return dragWillStayCentre.getLocation().y;
+	}
+
+	public WebElement getDragStayCentre() {
+		return dragWillStayCentre;
+	}
+
+	public void clickDefaultFunctionality() {
+		defaultFunctionalityButton.click();
+
+	}
+
+	public void clickConstrainMovement() {
+		constrainMovementButton.click();
+
+	}
+
+	public void clickCursorStyle() {
+		cursorStyleButton.click();
+
+	}
+
+	public void clickEvents() {
+		eventsButton.click();
+
+	}
+
+	public void clickDraggableSortable() {
+		draggableSortableButton.click();
+
+	}
+}

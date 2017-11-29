@@ -1,0 +1,311 @@
+package OwenC.AutomatedTestingWeek;
+
+import static org.junit.Assert.*;
+
+import java.io.File;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+
+import org.junit.*;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.PageFactory;
+
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.Status;
+import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
+import com.gargoylesoftware.htmlunit.javascript.background.JavaScriptExecutor;
+
+public class DraggableTest {
+
+	private WebDriver webDriver;
+	private static ExtentReports report;
+	private ScreenShot screenShot;
+	private SpreadSheetReader spreadSheetReader;
+	private DemoQADraggable draggablePage;
+	private DemoQAHomePage demoHome;
+	private List<String> inputList;
+
+	@BeforeClass
+	public static void init() {
+		report = new ExtentReports();
+		String fileName = "demoQATestResults" + ".html";
+		String filePath = System.getProperty("user.dir") + File.separatorChar + fileName;
+		report.attachReporter(new ExtentHtmlReporter(filePath));
+
+	}
+
+	@Before
+	public void setUp() {
+		webDriver = new ChromeDriver();
+		screenShot = new ScreenShot();
+		spreadSheetReader = new SpreadSheetReader("properties.xlsx");
+
+		demoHome = PageFactory.initElements(webDriver, DemoQAHomePage.class);
+		draggablePage = PageFactory.initElements(webDriver, DemoQADraggable.class);
+
+		inputList = new ArrayList<String>();
+
+	}
+
+	@After
+	public void tearDown() {
+		webDriver.quit();
+
+	}
+
+	@AfterClass
+	public static void clearUp() {
+		report.flush();
+	}
+
+	private void dragAndDrop(WebElement toMove, int x, int y) {
+		Actions builder = new Actions(webDriver);
+		builder.dragAndDropBy(toMove, x, y).perform();
+	}
+
+	@Test
+	public void defaultFunctionalityTest() {
+		ExtentTest test = report.createTest("defaultFunctionalityTest");
+		test.log(Status.INFO, "Default Functionality Test started");
+
+		Integer initialXPos;
+		Integer initialYPos;
+
+		Integer moveAmountX;
+		Integer moveAmountY;
+
+		inputList = spreadSheetReader.readRow(4, "inputs");
+		test.log(Status.DEBUG, "URL recieved from spreadsheet: " + inputList.get(1));
+		webDriver.navigate().to(inputList.get(1));
+		webDriver.manage().window().maximize();
+
+		inputList = spreadSheetReader.readRow(5, "inputs");
+		moveAmountX = Integer.parseInt(inputList.get(1).substring(0, inputList.get(1).length() - 2));
+		inputList = spreadSheetReader.readRow(6, "inputs");
+		moveAmountY = Integer.parseInt(inputList.get(1).substring(0, inputList.get(1).length() - 2));
+
+		demoHome.clickDraggableLink();
+		test.log(Status.INFO, "Link clicked");
+
+		try {
+			String sShot1 = screenShot.take(webDriver, "beforeMove");
+			test.addScreenCaptureFromPath(sShot1);
+			test.log(Status.INFO, "ScreenShot Before Move");
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+		initialXPos = draggablePage.getDraggableX();
+		test.log(Status.DEBUG, initialXPos.toString());
+		initialYPos = draggablePage.getDraggableY();
+		test.log(Status.DEBUG, initialYPos.toString());
+
+		dragAndDrop(draggablePage.getDraggable(), moveAmountX * 4, moveAmountY * 6);
+		test.log(Status.DEBUG, "New X Pos: " + draggablePage.getDraggableX());
+		test.log(Status.DEBUG, "New Y Pos: " + draggablePage.getDraggableY());
+
+		try {
+			String sShot2 = screenShot.take(webDriver, "afterMove");
+			test.addScreenCaptureFromPath(sShot2);
+			test.log(Status.INFO, "ScreenShot After Move");
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+		assertTrue("Result not expected", draggablePage.getDraggableX() != initialXPos);
+
+	}
+
+	@Test
+	public void constrainMovement() {
+		ExtentTest test = report.createTest("constrainMovementTest");
+		test.log(Status.INFO, "Constrain Movement Test started");
+
+		Integer initialXPos;
+		Integer initialYPos;
+
+		Integer moveAmountX;
+		Integer moveAmountY;
+
+		inputList = spreadSheetReader.readRow(4, "inputs");
+		test.log(Status.DEBUG, "URL recieved from spreadsheet: " + inputList.get(1));
+		webDriver.navigate().to(inputList.get(1));
+		webDriver.manage().window().maximize();
+
+		inputList = spreadSheetReader.readRow(5, "inputs");
+		moveAmountX = Integer.parseInt(inputList.get(1).substring(0, inputList.get(1).length() - 2));
+		inputList = spreadSheetReader.readRow(6, "inputs");
+		moveAmountY = Integer.parseInt(inputList.get(1).substring(0, inputList.get(1).length() - 2));
+
+		demoHome.clickDraggableLink();
+		test.log(Status.INFO, "Link clicked: Draggable");
+
+		draggablePage.clickConstrainMovement();
+		test.log(Status.INFO, "Button clicked: ConstrainMovement");
+
+		initialXPos = draggablePage.getVertDraggableX();
+		test.log(Status.DEBUG, initialXPos.toString());
+		initialYPos = draggablePage.getHorizontalDraggableY();
+		test.log(Status.DEBUG, initialYPos.toString());
+
+		dragAndDrop(draggablePage.getVertDraggable(), moveAmountX * 4, 0);
+		test.log(Status.DEBUG, "Attempted move of object by +200 in X");
+		dragAndDrop(draggablePage.getHorizontalDraggable(), 0, moveAmountY * 4);
+		test.log(Status.DEBUG, "Attempted move of object by +200 in Y");
+
+		assertFalse("Object moved unexpectedly", draggablePage.getVertDraggableX() != initialXPos);
+		assertFalse("Object moved unexpectedly", draggablePage.getHorizontalDraggableY() != initialYPos);
+	}
+
+	@Test
+	public void cursorStyle() {
+		ExtentTest test = report.createTest("cursorStyleTest");
+		test.log(Status.INFO, "Cursor Style Test started");
+
+		Integer initialXPos;
+		Integer initialYPos;
+
+		Integer moveAmountX;
+		Integer moveAmountY;
+
+		inputList = spreadSheetReader.readRow(4, "inputs");
+		test.log(Status.DEBUG, "URL recieved from spreadsheet: " + inputList.get(1));
+		webDriver.navigate().to(inputList.get(1));
+		webDriver.manage().window().maximize();
+
+		inputList = spreadSheetReader.readRow(5, "inputs");
+		moveAmountX = Integer.parseInt(inputList.get(1).substring(0, inputList.get(1).length() - 2));
+
+		inputList = spreadSheetReader.readRow(6, "inputs");
+		moveAmountY = Integer.parseInt(inputList.get(1).substring(0, inputList.get(1).length() - 2));
+
+		demoHome.clickDraggableLink();
+		test.log(Status.INFO, "Link clicked: Draggable");
+
+		draggablePage.clickCursorStyle();
+		test.log(Status.INFO, "Button clicked: Cursor Stlye");
+
+		initialXPos = draggablePage.getDragStayCentreX();
+		initialYPos = draggablePage.getDragStayCentreY();
+
+		test.log(Status.DEBUG, initialXPos.toString() + ": drag and stay centre initial X position");
+		test.log(Status.DEBUG, initialYPos.toString() + ": drag and stay centre initial Y position");
+
+		dragAndDrop(draggablePage.getDragStayCentre(), moveAmountX, moveAmountY);
+
+		test.log(Status.INFO, "Attempted move of object: DragAndStayCentre, by 50 in X, 50 in Y");
+
+		try {
+			String sShot3 = screenShot.take(webDriver, "afterMove CursorStyle A");
+			test.addScreenCaptureFromPath(sShot3);
+			test.log(Status.INFO, "ScreenShot After Move");
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+		int expectedXPosA, expectedYPosA;
+		int actualXPosA, actualYPosA;
+
+		expectedXPosA = initialXPos + moveAmountX + (-7);
+		expectedYPosA = initialYPos + moveAmountY + (25);
+
+		actualXPosA = draggablePage.getDragStayCentreX();
+		actualYPosA = draggablePage.getDragStayCentreY();
+
+		test.log(Status.DEBUG, expectedXPosA + " - initialXPos + movement + centre offset");
+		test.log(Status.DEBUG, expectedYPosA + " - initialYPos + movement + centre offset");
+		test.log(Status.DEBUG, actualXPosA + " - element position X");
+		test.log(Status.DEBUG, actualYPosA + " - element position Y");
+
+		if (!(expectedXPosA == actualXPosA) && (expectedYPosA == actualYPosA)) {
+			test.log(Status.FAIL, "Drag and stay in centre test failed");
+		}
+
+		assertTrue("Object isn't where it is expected",
+				(expectedXPosA == actualXPosA) && (expectedYPosA == actualXPosA));
+
+		// test for topLeft offset box
+
+		initialXPos = draggablePage.getDragTopLeftOffset().getLocation().x;
+		initialYPos = draggablePage.getDragTopLeftOffset().getLocation().y;
+		test.log(Status.DEBUG, initialXPos.toString() + ": top left offset initial X position");
+		test.log(Status.DEBUG, initialYPos.toString() + ": top left offset initial Y position");
+
+		dragAndDrop(draggablePage.getDragTopLeftOffset(), moveAmountX, moveAmountY);
+		test.log(Status.INFO, "Attempted move of object: DragTopLeftOffset, by 50 in X, 50 in Y");
+		
+		int expectedXPosB, expectedYPosB;
+		int actualXPosB, actualYPosB;
+		
+		try {
+			String sShot4 = screenShot.take(webDriver, "afterMove CursorStyle B");
+			test.addScreenCaptureFromPath(sShot4);
+			test.log(Status.INFO, "ScreenShot After Move");
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+		expectedXPosB = initialXPos + moveAmountX + (draggablePage.getDragTopLeftOffset().getSize().width / 2) + 13;
+		actualXPosB = draggablePage.getDragTopLeftOffset().getLocation().x;
+
+		test.log(Status.DEBUG, expectedXPosB + " - initialXPos + move amount + 1/2 element width + offset");
+		test.log(Status.DEBUG, actualXPosB + " - X position of element after move");
+
+		assertTrue("Object isn't where it is expected", expectedXPosB == actualXPosB);
+
+		expectedYPosB = initialYPos + moveAmountY + (draggablePage.getDragTopLeftOffset().getSize().height / 2) + 13;
+		actualYPosB = draggablePage.getDragTopLeftOffset().getLocation().y;
+
+		test.log(Status.DEBUG, expectedYPosB + " - initialYPos + move amount + 1/2 element height + offset");
+		test.log(Status.DEBUG, actualYPosB + " - Y position of element after move");
+
+		assertTrue("Object isn't where it is expected", expectedYPosB == actualYPosB);
+
+		if (!(expectedXPosB == actualXPosB)	&& (expectedYPosB == actualYPosB)) {
+			test.log(Status.FAIL, "Drag with Top Left offset test failed");
+		}
+
+		// test for bottomBox
+
+		initialXPos = draggablePage.getDragBottom().getLocation().x;
+		initialYPos = draggablePage.getDragBottom().getLocation().y;
+
+		test.log(Status.DEBUG, initialXPos.toString() + ": bottom alligned box initial X position");
+		test.log(Status.DEBUG, initialXPos.toString() + ": bottom alligned box offset initial X position");
+
+		dragAndDrop(draggablePage.getDragBottom(), moveAmountX, moveAmountY);
+
+		try {
+			String sShot5 = screenShot.take(webDriver, "afterMove CursorStyle C");
+			test.addScreenCaptureFromPath(sShot5);
+			test.log(Status.INFO, "ScreenShot After Move");
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+		int expectedXPos, expectedYPos;
+		int actualXPos, actualYPos;
+
+	}
+
+	@Test
+	public void events() {
+
+	}
+
+	@Test
+	public void draggableAndSortable() {
+
+	}
+}

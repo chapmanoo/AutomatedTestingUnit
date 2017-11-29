@@ -1,0 +1,121 @@
+package OwenC.AutomatedTestingWeek;
+
+import static org.junit.Assert.*;
+
+import java.io.File;
+import java.util.ArrayList;
+import java.util.List;
+
+import org.junit.*;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.PageFactory;
+
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.Status;
+import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
+import com.gargoylesoftware.htmlunit.javascript.background.JavaScriptExecutor;
+
+public class DraggableTest {
+
+	private WebDriver webDriver;
+	private static ExtentReports report;
+	private ScreenShot screenShot;
+	private SpreadSheetReader spreadSheetReader;
+
+	@BeforeClass
+	public static void init() {
+		report = new ExtentReports();
+		String fileName = "demoQATestResults" + ".html";
+		String filePath = System.getProperty("user.dir") + File.separatorChar + fileName;
+		report.attachReporter(new ExtentHtmlReporter(filePath));
+
+	}
+
+	@Before
+	public void setUp() {
+		webDriver = new ChromeDriver();
+		screenShot = new ScreenShot();
+		spreadSheetReader = new SpreadSheetReader("properties.xlsx");
+
+	}
+
+	@After
+	public void tearDown() {
+		webDriver.quit();
+
+	}
+
+	@AfterClass
+	public static void clearUp() {
+		report.flush();
+	}
+
+	@Test
+	public void defaultFunctionalityTest() {
+		ExtentTest test = report.createTest("defaultFunctionalityTest");
+		test.log(Status.INFO, "Default Functionality Test started");
+		
+		JavascriptExecutor js;
+		DemoQAHomePage demoHome = PageFactory.initElements(webDriver, DemoQAHomePage.class);
+		DemoQADraggable draggablePage = PageFactory.initElements(webDriver, DemoQADraggable.class);
+		Integer initialXPos;
+		Integer initialYPos;
+		Actions builder = new Actions(webDriver);
+		
+		
+		List<String> inputList = new ArrayList<String>();
+		
+		if (webDriver instanceof JavascriptExecutor) {
+			js = (JavascriptExecutor) webDriver;
+		} else {
+			throw new IllegalStateException("This driver does not support JavaScript!");
+		}
+		
+		inputList = spreadSheetReader.readRow(4, "inputs");
+		test.log(Status.DEBUG, "URL recieved from spreadsheet: " + inputList.get(1));
+		webDriver.navigate().to(inputList.get(1));
+		webDriver.manage().window().maximize();
+		
+		demoHome.clickDraggableLink();
+		test.log(Status.INFO, "Link clicked");
+		
+		initialXPos = draggablePage.getDraggableX();
+		test.log(Status.DEBUG, initialXPos.toString());
+		initialYPos = draggablePage.getDraggableY();
+		test.log(Status.DEBUG, initialYPos.toString());
+		
+		//click and drag draggable using js
+		builder.dragAndDropBy(draggablePage.getDraggable(), 20, 30);
+		
+		//assert initialXPos&&InitialYPos != draggable current XYPos
+		assertTrue("Result not expected", draggablePage.getDraggableX() != initialXPos);
+		assertTrue("Result not expected", draggablePage.getDraggableY() != initialYPos);
+		
+		//js.executeScript("return document.getElementById('draggable');");
+
+	}
+
+	@Test
+	public void constrainMovement() {
+
+	}
+
+	@Test
+	public void cursorStyle() {
+
+	}
+
+	@Test
+	public void events() {
+
+	}
+
+	@Test
+	public void draggableAndSortable() {
+
+	}
+}

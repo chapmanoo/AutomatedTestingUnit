@@ -1,0 +1,26 @@
+package OwenC.AutomatedTestingWeek;
+
+import org.junit.*;
+
+public class DraggableTest {
+
+	@BeforeClass
+	public static void init() {
+
+	}
+
+	@Before
+	public void setUp() {
+
+	}
+
+	@After
+	public void tearDown() {
+
+	}
+
+	@AfterClass
+	public static void clearUp() {
+
+	}
+}
