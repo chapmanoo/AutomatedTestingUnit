@@ -29,9 +29,9 @@ public class TestingStorePage {
 	private SpreadSheetReader spreadSheetReader;
 	private static ExtentReports report;
 	private ScreenShot screenShot;
-	private Wait<WebDriver> waitFW;
+	Wait<WebDriver> waitFW;
 	private StoreHomePage storeHome;
-	private WebDriverWait wait;
+	WebDriverWait wait;
 
 	@BeforeClass
 	public static void init() {

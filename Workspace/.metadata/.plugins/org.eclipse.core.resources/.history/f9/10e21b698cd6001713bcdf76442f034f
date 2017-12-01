@@ -3,9 +3,6 @@ package OwenC.AutomatedTestingWeek;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.*;
 
-
-import lombok.Data;
-@Data
 public class SignInPage {
 
 	@FindBy(id = "email_create")
