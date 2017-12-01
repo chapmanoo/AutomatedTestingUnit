@@ -1,0 +1,19 @@
+package OwenC.AutomatedTestingWeek;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.*;
+
+public class SignInPage {
+
+	@FindBy (id = "email_create")
+	private WebElement emailTextBox;
+	
+	@FindBy(id = "SubmitCreate")
+	private WebElement createAccountButton;
+	
+	@FindBy(id = "id_gender1")
+	private WebElement genderOneRadioButton;
+	
+	@FindBy(id = "id_gender2")
+	private WebElement genderTwoRadioButton;
+}

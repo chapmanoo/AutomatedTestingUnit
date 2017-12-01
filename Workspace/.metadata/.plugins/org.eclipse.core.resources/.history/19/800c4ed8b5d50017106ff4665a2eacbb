@@ -1,0 +1,23 @@
+package OwenC.AutomatedTestingWeek;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.Parameters;
+
+public class WebDriverFactory {
+
+	@Parameters("browser")
+	public WebDriver driverSelector(String browser) throws Exception {
+		WebDriver toReturn = new ChromeDriver();
+
+		
+		if (browser.equalsIgnoreCase("firefox")) {
+			System.setProperty("webdriver.gecko.driver", "C:\\Users\\Admin\\Documents\\OwenC\\GitTestingFolder\\Workspace\\AutomatedTestingWeek\\geckodriver.exe");
+			toReturn = new FirefoxDriver();
+		}
+		
+		return toReturn;
+	}
+
+}

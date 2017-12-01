@@ -1,0 +1,71 @@
+package OwenC.AutomatedTestingWeek;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.*;
+
+public class SignInPage {
+
+	@FindBy(id = "email_create")
+	private WebElement txtCreateEmail;
+
+	@FindBy(id = "SubmitCreate")
+	private WebElement cmdCreateAccount;
+
+	@FindBy(id = "id_gender1")
+	private WebElement rdbGender1;
+
+	@FindBy(id = "id_gender2")
+	private WebElement rdbGender2;
+
+	@FindBy(id = "customer_firstname")
+	private WebElement txtFirstName;
+
+	@FindBy(id = "customer_lastname")
+	private WebElement txtLastName;
+
+	@FindBy(id = "passwd")
+	private WebElement txtPassword;
+
+	@FindBy(id = "email")
+	private WebElement txtEmail;
+
+	@FindBy(id = "firstname")
+	private WebElement txtAddressFirstName;
+
+	@FindBy(id = "lastname")
+	private WebElement txtAddressLastName;
+
+	@FindBy(id = "company")
+	private WebElement txtCompany;
+
+	@FindBy(id = "address1")
+	private WebElement txtAddressLine1;
+
+	@FindBy(id = "address2")
+	private WebElement txtAddressLine2;
+
+	@FindBy(id = "city")
+	private WebElement txtCity;
+
+	@FindBy(id = "postcode")
+	private WebElement txtPostCode;
+
+	@FindBy(id = "other")
+	private WebElement txtOther;
+
+	@FindBy(id = "phone")
+	private WebElement txtPhone;
+
+	@FindBy(id = "phone_mobile")
+	private WebElement txtPhoneMobile;
+
+	@FindBy(id = "alias")
+	private WebElement txtAlias;
+
+	@FindBy(id = "id_country")
+	private WebElement ddbCountry;
+
+	@FindBy(id = "id_state")
+	private WebElement ddbState;
+
+}

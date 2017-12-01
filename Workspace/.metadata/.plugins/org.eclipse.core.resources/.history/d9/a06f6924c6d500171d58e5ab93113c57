@@ -1,0 +1,15 @@
+package OwenC.AutomatedTestingWeek;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.*;
+
+public class StoreHomePage {
+
+	@FindBy (css = "##header > div:nth-child(3) > div > div > div:nth-child(3) > div > a")
+	private WebElement cartButton;
+	
+	public WebElement getCartButton()
+	{
+		return cartButton;
+	}
+}

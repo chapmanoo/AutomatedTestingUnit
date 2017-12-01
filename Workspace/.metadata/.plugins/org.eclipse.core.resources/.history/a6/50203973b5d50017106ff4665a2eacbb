@@ -1,0 +1,24 @@
+package OwenC.AutomatedTestingWeek;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class WebDriverFactory {
+
+	public WebDriver driverSelector(String browser) throws Exception {
+		WebDriver toReturn = new ChromeDriver();
+
+		
+		if (browser.equalsIgnoreCase("firefox")) {
+			System.setProperty("webdriver.gecko.driver", "user.dir\\geckodriver.exe");
+			toReturn = new FirefoxDriver();
+		}
+		
+		if (browser.equalsIgnoreCase("chrome")) {
+			System.setProperty("webdriver.chrome.driver", "user.dir\\chromedriver.exe");
+		}
+		return toReturn;
+	}
+
+}

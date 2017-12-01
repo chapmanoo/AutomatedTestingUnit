@@ -1,0 +1,47 @@
+package OwenC.AutomatedTestingWeek;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.*;
+
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.Status;
+
+public class TestNGTesting {
+
+	private WebDriver webDriver;
+	private static ExtentReports report;
+	private ScreenShot screenShot;
+	private SpreadSheetReader spreadSheetReader;
+
+	@BeforeTest
+	@Parameters("browser")
+	public void setUp(String browser) throws Exception {
+		if (browser.equalsIgnoreCase("firefox")) {
+			System.setProperty("webdriver.gecko.driver",
+					"C:\\Users\\Admin\\Documents\\OwenC\\GitTestingFolder\\Workspace\\AutomatedTestingWeek\\geckodriver.exe");
+			webDriver = new FirefoxDriver();
+		}
+		if (browser.equalsIgnoreCase("chrome")) {
+			System.setProperty("webdriver.chrome.driver",
+					"C:\\Users\\Admin\\Documents\\OwenC\\GitTestingFolder\\Workspace\\AutomatedTestingWeek\\chromedriver.exe");
+			webDriver = new ChromeDriver();
+		}
+
+	}
+
+	@Test
+	public void test() {
+		ExtentTest test = report.createTest("MyFirstTest");
+		test.log(Status.INFO, "Test started");
+
+	}
+
+	@AfterTest
+	public void tearDown() {
+		webDriver.quit();
+	}
+
+}

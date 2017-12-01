@@ -1,0 +1,242 @@
+package OwenC.AutomatedTestingWeek;
+
+import static org.junit.Assert.*;
+
+import java.io.File;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.NoSuchElementException;
+import java.util.concurrent.TimeUnit;
+import java.util.function.Function;
+
+import org.junit.*;
+
+import org.openqa.selenium.chrome.*;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.FluentWait;
+import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.Wait;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.Status;
+import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+public class TestingStorePage {
+
+	private List<String> inputList;
+	private WebDriver webDriver;
+	private SpreadSheetReader spreadSheetReader;
+	private static ExtentReports report;
+	private ScreenShot screenShot;
+	Wait<WebDriver> waitFW;
+	private StoreHomePage storeHome;
+	WebDriverWait wait;
+
+	@BeforeClass
+	public static void init() {
+		report = new ExtentReports();
+		String fileName = "StoreTestResults" + ".html";
+		String filePath = System.getProperty("user.dir") + File.separatorChar + fileName;
+		report.attachReporter(new ExtentHtmlReporter(filePath));
+	}
+
+	@Before
+	public void setUp() {
+		spreadSheetReader = new SpreadSheetReader("properties.xlsx");
+		webDriver = driverSelector();
+		inputList = new ArrayList<String>();
+
+		storeHome = PageFactory.initElements(webDriver, StoreHomePage.class);
+
+		waitFW = new FluentWait<WebDriver>(webDriver).withTimeout(30, TimeUnit.SECONDS)
+				.pollingEvery(5, TimeUnit.SECONDS).ignoring(NoSuchElementException.class);
+
+		wait = new WebDriverWait(webDriver, 20);
+
+	}
+
+	@After
+	public void tearDown() {
+
+		//webDriver.quit();
+	}
+
+	public WebDriver driverSelector() {
+		WebDriver toReturn;
+		inputList = new ArrayList<String>();
+		inputList = spreadSheetReader.readRow(7, "inputs");
+
+		if (inputList.get(1).equalsIgnoreCase("firefox")) {
+			System.setProperty("webdriver.gecko.driver", "geckodriver.exe");
+			toReturn = new FirefoxDriver();
+		} else {
+			toReturn = new ChromeDriver();
+		}
+
+		return toReturn;
+	}
+
+	@AfterClass
+	public static void cleanUp() {
+		report.flush();
+	}
+
+	/*@Test
+	public void storeSiteTestOne() {
+		final ExtentTest test = report.createTest("Store Site Test One");
+		test.log(Status.INFO, "Store Site Test One: Removing item from cart");
+
+		Actions builder = new Actions(webDriver);
+
+		inputList = spreadSheetReader.readRow(8, "inputs");
+		String homePageURL = inputList.get(1);
+		test.log(Status.DEBUG, "URL from spreadsheet : " + homePageURL);
+
+		webDriver.navigate().to(homePageURL);
+		test.log(Status.INFO, "Navigated to: " + homePageURL);
+		webDriver.manage().window().maximize();
+
+		storeHome.getCartButton().click();
+
+		String cartContents = storeHome.getCartContents().getText().toString();
+		test.log(Status.DEBUG, "Cart contents text: " + cartContents);
+
+		assertEquals("Cart wasn't displaying expected", "Your shopping cart is empty.", cartContents);
+
+		storeHome.getPageLogo().click();
+
+		storeHome.getFeaturedItemOne().click();
+		test.log(Status.DEBUG, "Clicked on: featuredItemOne");
+
+		/*
+		 * WebElement itemWindow = waitFW.until(new Function<WebDriver, WebElement>() {
+		 * public WebElement apply(WebDriver webDriver) { test.log(Status.DEBUG,
+		 * "item displayed"); return webDriver.findElement(By.
+		 * cssSelector("#index > div.fancybox-overlay.fancybox-overlay-fixed > div > div"
+		 * )); } });
+		 
+
+		try {
+			TimeUnit.SECONDS.sleep(1);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+		/*
+		 * WebElement foo; foo =
+		 * wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(
+		 * "#group_1")));
+		 
+
+		builder.click(storeHome.getSizeDropDown()).release().moveByOffset(5, 20).click().release().perform();
+
+	}*/
+
+	@Test
+	public void registerAccountTest() {
+		ExtentTest test = report.createTest("Store Site Test Two");
+		test.log(Status.INFO, "Store Site Test Two: Creating an account");
+		
+		SignInPage accountPage = PageFactory.initElements(webDriver, SignInPage.class);
+		
+		inputList = spreadSheetReader.readRow(1, "persons");
+		
+		String gender = inputList.get(1).toLowerCase();
+		String firstName = inputList.get(2);
+		String lastName = inputList.get(3);
+		String email = inputList.get(4);
+		String password = inputList.get(5);
+		String dateOfBirth = inputList.get(6);
+		String company = inputList.get(7);
+		String addressLineOne = inputList.get(8);
+		String addressLineTwo = inputList.get(9);
+		String city = inputList.get(10);
+		String state = inputList.get(11);
+		String zip = inputList.get(12);
+		String country = inputList.get(13);
+		String additionalInfo = inputList.get(14);
+		String telephone = inputList.get(15);
+		String mobile = inputList.get(16);
+		String alias = inputList.get(17);
+		
+		test.log(Status.INFO, firstName + ", " + lastName + ", " + email + ", " + password + ", " + dateOfBirth
+				+ ", " + company + ", " + addressLineOne + ", " + addressLineTwo
+				 + ", " + city + ", " + state + ", " + zip + ", " + country
+				 + ", " + additionalInfo + ", " + telephone + ", " + mobile
+				 + ", " + alias);
+		
+		inputList = spreadSheetReader.readRow(8, "inputs");
+		String homePageURL = inputList.get(1);
+		test.log(Status.DEBUG, "URL from spreadsheet : " + homePageURL);
+		webDriver.navigate().to(homePageURL);
+		
+		storeHome.getLoginButton().click();
+		
+		accountPage.getTxtCreateEmail().sendKeys(email);
+		
+		try {
+			TimeUnit.SECONDS.sleep(1);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		accountPage.getCmdCreateAccount().click();
+		
+		try {
+			TimeUnit.SECONDS.sleep(5);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		if (gender.equals("male"))
+		{
+			accountPage.getRdbGender1().click();
+		} else {
+			accountPage.getRdbGender2().click();
+		}
+		
+		accountPage.getTxtFirstName().sendKeys(firstName);
+		accountPage.getTxtLastName().sendKeys(lastName);
+		accountPage.getTxtEmail().clear();
+		accountPage.getTxtEmail().sendKeys(email);
+		accountPage.getTxtPassword().sendKeys(password);
+		
+		String[] dobSplit = dateOfBirth.split("/");
+		
+		System.out.println(dateOfBirth);
+		
+		Select select = new Select(accountPage.getDdbDayOfBirth());
+		select.selectByValue(dobSplit[0]);
+		select = new Select(accountPage.getDdbMonthOfBirth());
+		select.selectByValue(dobSplit[1]);
+		accountPage.getDdbYearOfBirth().sendKeys(dobSplit[2] + "\n");
+		
+		//accountPage . get DOB 
+		accountPage.getTxtCompany().sendKeys(company);
+		accountPage.getTxtAddressLine1().sendKeys(addressLineOne);
+		accountPage.getTxtAddressLine2().sendKeys(addressLineTwo);
+		accountPage.getTxtCity().sendKeys(city);
+		accountPage.getDdbState().sendKeys(state + "\n");
+		accountPage.getTxtPostCode().sendKeys(zip.substring(0, zip.length() - 2));
+		accountPage.getDdbCountry().sendKeys(country + "\n");
+		accountPage.getTxtOther().sendKeys(additionalInfo);
+		accountPage.getTxtPhone().sendKeys(telephone);
+		accountPage.getTxtPhoneMobile().sendKeys(mobile);
+		accountPage.getTxtAlias().sendKeys(alias);
+		
+		
+	}
+
+}

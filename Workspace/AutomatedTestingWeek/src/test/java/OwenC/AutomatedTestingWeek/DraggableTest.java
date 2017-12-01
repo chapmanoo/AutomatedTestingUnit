@@ -8,7 +8,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.junit.*;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -19,7 +18,6 @@ import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
-import com.gargoylesoftware.htmlunit.javascript.background.JavaScriptExecutor;
 
 public class DraggableTest {
 
@@ -41,17 +39,20 @@ public class DraggableTest {
 	}
 
 	@Before
-	public void setUp() {
-		webDriver = new ChromeDriver();
+	public void setUp() throws Exception {
+		inputList = new ArrayList<String>();
+		
 		screenShot = new ScreenShot();
 		spreadSheetReader = new SpreadSheetReader("properties.xlsx");
+		
+		webDriver = new ChromeDriver();
 
 		demoHome = PageFactory.initElements(webDriver, DemoQAHomePage.class);
 		draggablePage = PageFactory.initElements(webDriver, DemoQADraggable.class);
 
-		inputList = new ArrayList<String>();
-
 	}
+	
+	
 
 	@After
 	public void tearDown() {
@@ -210,8 +211,10 @@ public class DraggableTest {
 			e.printStackTrace();
 		}
 
-		int expectedXPosA, expectedYPosA;
-		int actualXPosA, actualYPosA;
+		int expectedXPosA;
+		int expectedYPosA;
+		int actualXPosA;
+		int actualYPosA;
 
 		expectedXPosA = initialXPos + moveAmountX + (-7);
 		expectedYPosA = initialYPos + moveAmountY + (25);
@@ -224,7 +227,7 @@ public class DraggableTest {
 		test.log(Status.DEBUG, actualXPosA + " - element position X");
 		test.log(Status.DEBUG, actualYPosA + " - element position Y");
 
-		if (!(expectedXPosA == actualXPosA) && (expectedYPosA == actualYPosA)) {
+		if ((expectedXPosA != actualXPosA) && (expectedYPosA != actualYPosA)) {
 			test.log(Status.FAIL, "Drag and stay in centre test failed");
 		}
 
@@ -241,8 +244,10 @@ public class DraggableTest {
 		dragAndDrop(draggablePage.getDragTopLeftOffset(), moveAmountX, moveAmountY);
 		test.log(Status.INFO, "Attempted move of object: DragTopLeftOffset, by 50 in X, 50 in Y");
 
-		int expectedXPosB, expectedYPosB;
-		int actualXPosB, actualYPosB;
+		int expectedXPosB;
+		int expectedYPosB;
+		int actualXPosB;
+		int actualYPosB;
 
 		try {
 			String sShot4 = screenShot.take(webDriver, "afterMove CursorStyle B");
@@ -269,7 +274,7 @@ public class DraggableTest {
 
 		assertTrue("Object isn't where it is expected", expectedYPosB == actualYPosB);
 
-		if (!(expectedXPosB == actualXPosB) && (expectedYPosB == actualYPosB)) {
+		if ((expectedXPosB != actualXPosB) && (expectedYPosB != actualYPosB)) {
 			test.log(Status.FAIL, "Drag with Top Left offset test failed");
 		}
 
@@ -292,8 +297,10 @@ public class DraggableTest {
 			e.printStackTrace();
 		}
 
-		int expectedXPosC, expectedYPosC;
-		int actualXPosC, actualYPosC;
+		int expectedXPosC;
+		int expectedYPosC;
+		int actualXPosC;
+		int actualYPosC;
 		int yOffset = -19;
 
 		expectedXPosC = initialXPos + moveAmountX;
